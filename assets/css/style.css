@@ -1,0 +1,45 @@
+body {
+    /* From https://css.glass */
+background: rgba(49, 2, 236, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(226, 0, 0, 0.884);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(253, 3, 3, 0.3);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+#output {
+    width: 50%; /* Set width to 50% of the device width */
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing */
+}
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 600px;
+}
+.key {
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.key:active {
+    background-color: #0056b3;
+}
